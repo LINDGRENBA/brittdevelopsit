@@ -45,12 +45,13 @@ ul {
 
 .welcome {
   text-align: center;
-  padding-top: 2rem;
+  padding: 2rem 10rem;
 }
 
 canvas {
   width: 100%;
-  height: 100px;
+  height: 40rem;
+  background-color: #06A77D;
 }
 
 @media screen and (max-width: 64em) {
@@ -60,6 +61,10 @@ canvas {
 
   ul {
     font-size: 2rem;
+  }
+
+  .welcome {
+    padding: 2rem 4rem;
   }
   
 }
