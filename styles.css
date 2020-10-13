@@ -32,7 +32,9 @@ ul, a {
   list-style-type: none;
   text-decoration: none;
   color: #FBFCFF;
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: 'Sansita Swashed', cursive;
+  font-weight: 300;
 }
 
 ul {
@@ -46,6 +48,12 @@ ul {
 .welcome {
   text-align: center;
   padding: 2rem 10rem;
+  background-image: url(images/mountain.jpg);
+  
+}
+
+.welcome > h1 {
+  font-family: 'Sansita Swashed', cursive;
 }
 
 canvas {
