@@ -25,7 +25,7 @@ header {
   background-color: #274156;
   color: #FBFCFF;
   font-size: 2rem;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 ul, a {
@@ -47,8 +47,12 @@ ul {
 
 .welcome {
   text-align: center;
-  padding: 2rem 10rem;
+  font-size: 2rem;
+  color: #274156;
+  padding: 6rem 10rem;
   background-image: url(images/mountain.jpg);
+  background-repeat: no-repeat;
+
   
 }
 
@@ -59,12 +63,12 @@ ul {
 canvas {
   width: 100%;
   height: 40rem;
-  background-color: #06A77D;
+  background-color: #274156;
 }
 
 @media screen and (max-width: 64em) {
   header {
-    padding : 3em;
+    padding : 2.5em;
   }
 
   ul {
@@ -72,7 +76,7 @@ canvas {
   }
 
   .welcome {
-    padding: 2rem 4rem;
+    padding: 8rem 4rem;
   }
   
 }
