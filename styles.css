@@ -1,6 +1,8 @@
 /* 
 #274156
 #FBFCFF
+#2A4747 - header and canvas
+#E2DCDE - nav links
 */
 
 /* use REMs for sizes and spacing - REMs set font sizes based on font size of the root HTML element,
@@ -22,8 +24,7 @@ body {
 }
 
 header {
-  background-color: #274156;
-  color: #FBFCFF;
+  background-color: rgba(42, 71, 71, 0.9);
   font-size: 2rem;
   padding: 0.5rem;
 }
@@ -31,7 +32,7 @@ header {
 ul, a {
   list-style-type: none;
   text-decoration: none;
-  color: #FBFCFF;
+  color: #E2DCDE;
   font-size: 3rem;
   font-family: 'Sansita Swashed', cursive;
   font-weight: 300;
@@ -46,15 +47,41 @@ ul {
 }
 
 .welcome {
+  display: block;
+  position: relative;
   text-align: center;
   font-size: 2rem;
   color: #274156;
   padding: 6rem 10rem;
-  background-image: url(images/mountain.jpg);
-  background-repeat: no-repeat;
-
-  
+  border-bottom: 2px solid #fff;
+  border-top: 5px solid #274156;
 }
+
+.welcome::after {
+  content: "";
+  background-image:  url("images/mountain.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.65;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
+
+/* div::after {
+  content: "";
+  background: url(image.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+} */
 
 .welcome > h1 {
   font-family: 'Sansita Swashed', cursive;
@@ -63,7 +90,7 @@ ul {
 canvas {
   width: 100%;
   height: 40rem;
-  background-color: #274156;
+  background-color: rgba(42, 71, 71, 0.95);
 }
 
 @media screen and (max-width: 64em) {
@@ -77,6 +104,10 @@ canvas {
 
   .welcome {
     padding: 8rem 4rem;
+  }
+
+  .welcome::after {
+    opacity: 0.4;
   }
   
 }
