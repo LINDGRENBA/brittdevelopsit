@@ -29,6 +29,11 @@ header {
   background-color: rgba(42, 71, 71, 0.9);
   font-size: 2rem;
   padding: 0.01rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 ul, a {
@@ -48,13 +53,33 @@ ul {
   margin-left: -4rem;
 }
 
+a:link {
+  color: #E2DCDE;
+}
+
+a:visited {
+  color: lightgrey;
+}
+
+.proa:focus {
+  color: #F25F5C;
+}
+
+a:hover {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
 .welcome {
   display: block;
   position: relative;
   text-align: center;
   font-size: 2rem;
   color: #274156;
-  /* padding: 2rem 10rem 10rem 10rem; */
+  padding: 6rem 10rem 10rem 10rem;
   border-bottom: 2px solid #fff;
 }
 
@@ -104,17 +129,49 @@ section {
 }
 
 .project-link {
-  color: #274156;
+  color: #E2DCDE;
+  text-decoration: underline;
 }
 
 .project-para {
   padding: 0 2rem;
 }
 
+.project-link:link {
+  color: rgba(42, 71, 71, 0.75);
+}
+
+.project-link:visited {
+  color: #247BA0;
+}
+
+.project-link:focus {
+  color: #F25F5C;
+}
+
+.project-link:hover {
+  color: #274156;
+  padding: 3rem;
+}
+
+.project-link:active {
+  color: #F25F5C;
+}
+
+
+
+footer {
+  
+}
+
+
+
+
+
 
 @media screen and (max-width: 64em) {
   header {
-    padding : 2.5em;
+    padding : 1em;
   }
 
   ul {
@@ -122,7 +179,7 @@ section {
   }
 
   .welcome {
-    padding: 4rem;
+    padding: 2rem;
   }
 
   .welcome::after {
