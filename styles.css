@@ -55,7 +55,6 @@ ul {
   color: #274156;
   padding: 2rem 10rem 10rem 10rem;
   border-bottom: 2px solid #fff;
-  border-top: 5px solid #274156;
 }
 
 .welcome::after {
@@ -91,6 +90,26 @@ section {
   background-color:  rgba(42, 71, 71, 0.9);
   color:  #E2DCDE;
 }
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.project-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+}
+
+.project-link {
+  color: #274156;
+}
+
+.project-para {
+  padding: 0 2rem;
+}
+
 
 @media screen and (max-width: 64em) {
   header {
