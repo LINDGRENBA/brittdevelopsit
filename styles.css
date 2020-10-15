@@ -102,6 +102,10 @@ ul {
   font-family: 'Sansita Swashed', cursive;
 }
 
+.welcome > p {
+  font-size:  2.5rem;
+}
+
 .profile-img {
   height: 25rem;
   padding-top: 2em;
@@ -120,7 +124,7 @@ section {
 
 #projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .project-img {
