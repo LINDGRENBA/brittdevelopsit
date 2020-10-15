@@ -47,7 +47,7 @@ ul, a {
 
 ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
   justify-items: center;
   margin-left: -4rem;
@@ -162,7 +162,7 @@ section {
 
 .contact-options {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
   justify-items: center;
   align-items: center;
