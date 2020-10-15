@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d8e8336187.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <script src="./scripts.js"></script>
@@ -13,9 +14,9 @@
     <nav>
       <ul class="wrapper">
         <!-- <li class="nav-link"><a href="#"><img src="#" alt="logo">  </a></li> -->
-        <li class="nav-link"><a href="#work">Work  </a></li>
-        <li class="nav-link"><a href="#about">About  </a></li>
-        <li class="nav-link"><a href="#contact">Contact  </a></li>
+        <li class="nav-link"><a href="#scrollto-work">Projects  </a></li>
+        <li class="nav-link"><a href="#scrollto-about">About  </a></li>
+        <li class="nav-link"><a href="#scrollto-contact">Contact  </a></li>
       </ul>
     </nav>
   </header>
@@ -23,23 +24,40 @@
     <img class="profile-img" src="images/profile-img.png" alt="A picture of Brittany, the developer">
     <h1>Welcome</h1>
     <p>I'm Britt, a Full-Stack JavaScript, C#.NET & React developer interested in creating beautiful design, following best practices and learning new things.</p>
+    <span id="scrollto-work"></span>
   </div>
   <section id="work">
-    <h3>My Work</h3>
+    <h2>Featured Projects</h2>
     <div id="projects">
       <!-- projects will be populated here from scripts.js -->
     </div>
+    <span id="scrollto-about"></span>
   </section>
   <section id="about">
-    <h3>About Me</h3>
+    <h2>About Me</h2>
     <p>I really enjoy languages, and not just programming ones. I've studied Japanese, Chinese and Arabic, though I've only really retained the first. From 2010 to 2011 I lived in Izumo, Japan and ate as much Okonomiyaki (Hiroshima-style for life) and Tonkotsu ramen as I could get my hands on! I've live in Milwaukie, OR. with my husband and our pup, Gemma, but my heart will forever be split between Japan and Bellingham, WA. where I have many dear friends and fond memories. I've worked in education and health care, but found my ultimate calling with development.</p>
+    <span id="scrollto-contact"></span>
   </section>
   <section id="contact">
-    <h3>Contact Me</h3>
-    <p>Marfa pug austin put a bird on it post-ironic. Affogato hella mumblecore, locavore seitan lyft four dollar toast gastropub pour-over selvage woke.</p>
+    <h2>Contact Me</h2>
+    <div class="contact-options">
+      <div class="contact-item">
+        <img src="images/GitHub-Mark-32px.png" alt="GitHub-Mark">
+        <p><a class="contact-link" href="https://github.com/LINDGRENBA">Check out my Github</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="far fa-envelope fa-2x"></i>
+        <p><a class="contact-link" href="mailto: brittdevelopsit@gmail.com">brittdevelopsit@gmail.com</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-linkedin fa-2x"></i>
+        <p><a class="contact-link" href="https://www.linkedin.com/in/brittanylindgren/">Find me on LinkedIn</a></p>
+      </div>
+    </div>
   </section>
   <footer>
-    
+    <h3>&copy; Brittany Lindgren, 2020</h3>
+    <span id="credit">Photo by <a href="https://unsplash.com/@franceperles?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">france perles</a> on <a href="https://unsplash.com/s/photos/woods?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
   </footer>
 </body>
 </html>

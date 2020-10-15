@@ -26,7 +26,7 @@ body {
 }
 
 header {
-  background-color: rgba(42, 71, 71, 0.9);
+  background-color: rgba(42, 71, 71, 1);
   font-size: 2rem;
   padding: 0.01rem;
   position: sticky;
@@ -48,28 +48,29 @@ ul, a {
 ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 1em;
+  grid-gap: 1rem;
   justify-items: center;
   margin-left: -4rem;
 }
 
-a:link {
+/* LINK EFFECTS FOR NAVIGATION */
+.nav-link a:link {
   color: #E2DCDE;
 }
 
-a:visited {
+.nav-link a:visited {
   color: lightgrey;
 }
 
-.proa:focus {
+.nav-link a:focus {
   color: #F25F5C;
 }
 
-a:hover {
+.nav-link a:hover {
   color: black;
 }
 
-a:hover {
+.nav-link a:hover {
   color: black;
 }
 
@@ -137,6 +138,7 @@ section {
   padding: 0 2rem;
 }
 
+/* LINK EFFECTS FOR PROJECTS */
 .project-link:link {
   color: rgba(42, 71, 71, 0.75);
 }
@@ -158,16 +160,60 @@ section {
   color: #F25F5C;
 }
 
-
-
-footer {
-  
+.contact-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
 }
 
+/* LINK EFFECTS FOR CONTACT */
+.contact-link:link {
+  color: rgba(42, 71, 71, 0.75);
+  text-decoration: underline;
+  padding: 1rem;
+}
 
+.contact-link:visited {
+  color: #247BA0;
+}
 
+.contact-link:focus {
+  color: #F25F5C;
+}
 
+.contact-link:hover {
+  color: #274156;
+  padding: 3rem;
+}
 
+.contact-link:active {
+  color: #F25F5C;
+}
+
+.fab {
+  height: 1rem;
+  font-size: 6em;
+}
+
+footer {
+  text-align: center;
+  color: #E2DCDE;
+  font-size: 2rem;
+  height: 5em;
+  padding: 5rem;
+  background-color:  rgba(42, 71, 71, 1);
+}
+
+#credit > a, span {
+  font-size: 2rem;
+}
+
+#credit > a {
+  text-decoration: underline;
+  color: burlywood;
+}
 
 @media screen and (max-width: 64em) {
   header {
