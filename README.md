@@ -2,7 +2,7 @@
 
 ![an image of me](images/me.jpg)
 
-#### A portfolio website to display my projects and let potential employers get to know me, 09.12.2020
+#### A portfolio website to display my projects and let potential employers get to know me, 010.14.2020
 
 #### By Brittany Lindgren
 
