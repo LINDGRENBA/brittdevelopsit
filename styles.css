@@ -19,7 +19,9 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   min-height: 100vh;
   line-height: 3rem;
@@ -27,6 +29,7 @@ body {
 
 header {
   background-color: rgba(42, 71, 71, 1);
+  height: 10rem;
   font-size: 2rem;
   padding: 0.01rem;
   position: sticky;
@@ -66,18 +69,25 @@ ul {
   color: #F25F5C;
 }
 
-/* .nav-link a:hover {
-  color: black;
-} */
-
 .nav-link:hover {
   background-color: #4a7c59;
   padding: 2px;
   border-radius: 3px;
 }
 
+#check {
+  display: none;
+  z-index: 2;
+}
+
 .menubtn {
   color: #fff;
+  font-size: 4rem;
+  line-height: 6rem;
+  float: right;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: none;
 }
 
 .welcome {
@@ -115,6 +125,57 @@ ul {
 .profile-img {
   height: 25rem;
   padding-top: 2em;
+}
+
+@media screen and (max-width: 60rem) {
+
+  header {
+    height: 6rem;
+  }
+
+  .menubtn {
+    display: block;
+  }
+
+  ul {
+    z-index: 1;
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: rgba(42, 71, 71, 1);
+    top: 8rem;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 30px 0;
+    line-height: 2rem;
+  }
+
+  nav ul li a {
+    font-size: 3rem;
+  }
+
+  li.nav-link:hover {
+    background-color: none;
+    }
+
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  #check {
+    z-index: 2;
+  }
+
+  .profile-img {
+    margin-top: 15rem;
+  }
 }
 
 section {
