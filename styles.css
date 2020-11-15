@@ -54,24 +54,30 @@ ul {
 }
 
 /* LINK EFFECTS FOR NAVIGATION */
-.nav-link a:link {
+.nav-link:link {
   color: #E2DCDE;
 }
 
-.nav-link a:visited {
+.nav-link:visited {
   color: lightgrey;
 }
 
-.nav-link a:focus {
+.nav-link:focus {
   color: #F25F5C;
 }
 
-.nav-link a:hover {
+/* .nav-link a:hover {
   color: black;
+} */
+
+.nav-link:hover {
+  background-color: #4a7c59;
+  padding: 2px;
+  border-radius: 3px;
 }
 
-.nav-link a:hover {
-  color: black;
+.menubtn {
+  color: #fff;
 }
 
 .welcome {
