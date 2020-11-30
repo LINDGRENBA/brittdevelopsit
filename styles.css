@@ -192,15 +192,18 @@ section {
 
 #projects {
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: minmax(300px, auto);
+}
+
+.project-item > p {
+  padding: 0 3rem 0 3rem;
 }
 
 img {
   width: 300px;
   height: 300px;
-  /* border-radius: 1rem; */
 }
 
 .project-link {
@@ -305,6 +308,13 @@ footer {
   .welcome::after {
     opacity: 0.4;
   }
+
+  /* img {
+    width: 200px;
+    height: 200px;
+  } */
+
+  
   
 }
 
